@@ -18,7 +18,7 @@ img = get_sample("orange.jpg")
 #print(img)
 #img_gray = cv.imread(img, cv.IMREAD_GRAYSCALE)
 #img_gray = cv.imread("starry_night.jpg", cv.IMREAD_GRAYSCALE)
-img_gray = cv.imread("orange.jpg", cv.IMREAD_GRAYSCALE)
+img_gray = cv.imread("orange.jpg", cv.IMREAD_GRAYSCALE) #  BGR 
 #img_gray = get_sample("starry_night.jpg", cv.IMREAD_GRAYSCALE)
 if img is None:
     sys.exit("Could not read the image.")
