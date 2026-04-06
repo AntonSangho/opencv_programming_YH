@@ -7,7 +7,8 @@ gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 edges = cv.Canny(gray, 50, 150, apertureSize=3)
 
 # 극좌표 방식: (ρ, θ)로 직선 표현
-lines = cv.HoughLines(edges, 1, np.pi/180, 200)
+#lines = cv.HoughLines(edges, 1, np.pi/180, 200)
+lines = cv.HoughLines(edges, 1, np.pi/180, 300)
 
 # 검출된 직선 그리기
 for line in lines:
